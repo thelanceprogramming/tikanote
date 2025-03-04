@@ -2,10 +2,9 @@
 
 </script>
 
-
 <template>
     <div>
-        <h1 class="text-white text-5xl">Hello World</h1>
+        <h1 class="text-3xl text-white">Hello this is the services page</h1>
     </div>
 </template>
 

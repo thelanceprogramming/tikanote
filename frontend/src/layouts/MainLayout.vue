@@ -1,19 +1,26 @@
 <script setup lang="ts">
 
+ const menuItems = [
+    { name: "Home", path: "/"},
+    { name: "Services", path: "/services"}
+ ]
+
 </script>
 
 <template>
     <div>
-        <header class="bg-black p-10">
-            <nav>
-                <ul class="flex justify-center gap-10 menu-items">
-                    <li>Test</li>
-                    <li>Test</li>
+        <header class="p-2 fixed top-0 z-50 w-full">
+            <nav class="bg-black rounded-md sticky top-0">
+                <ul class="p-5 flex justify-center gap-10 menu-items">
+                    <li v-for="item in menuItems" :key="item.path">
+                        <router-link :to="item.path">
+                            {{ item.name }}
+                        </router-link>
+                    </li>
                 </ul>
             </nav>
         </header>
-
-        <main>
+        <main class="flex justify-center bg-blue-500 h-[120vh] m-auto w-3/4">
             <router-view />
         </main>
         <footer>
