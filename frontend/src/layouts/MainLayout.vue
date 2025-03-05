@@ -20,7 +20,7 @@
                 </ul>
             </nav>
         </header>
-        <main class="flex justify-center bg-blue-500 h-[120vh] m-auto w-3/4">
+        <main>
             <router-view />
         </main>
         <footer>
