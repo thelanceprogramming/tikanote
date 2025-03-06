@@ -10,7 +10,7 @@
 <template>
     <div>
         <header class="p-2 fixed top-0 z-50 w-full">
-            <nav class="bg-black rounded-md sticky top-0">
+            <nav class="bg-[#5296A5] rounded-md sticky top-0">
                 <ul class="p-5 flex justify-center gap-10 menu-items">
                     <li v-for="item in menuItems" :key="item.path">
                         <router-link :to="item.path">

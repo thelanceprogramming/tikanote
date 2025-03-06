@@ -4,4 +4,10 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #F4f4f9;
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
