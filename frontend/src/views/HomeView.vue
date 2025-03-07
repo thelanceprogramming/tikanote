@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import Card from '../components/Card.vue';
+import Button from '../components/Button.vue';
 
+
+const handleClick = () => {
+    alert('Button clicked!');
+}
 </script>
 
 
@@ -34,6 +39,9 @@ import Card from '../components/Card.vue';
                 <h3 class="text-lg">Hello Worlld</h3>    
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga praesentium culpa, ratione quos reiciendis veritatis quae aut voluptatem delectus consectetur sit impedit provident dolores repudiandae a ab, iure dignissimos repellendus!</p>          
             </Card>
+        </div>
+        <div class="flex justify-center">
+            <Button label="Test" @click="handleClick"/>
         </div>
     </section>
 
